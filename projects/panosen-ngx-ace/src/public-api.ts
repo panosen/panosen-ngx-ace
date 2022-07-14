@@ -2,7 +2,7 @@
  * Public API Surface of ngx-ace
  */
 
-export * from './ngx-ace.module';
+export * from './panosen-ace.module';
 
 export * from './services/pano-ace.service'
 
