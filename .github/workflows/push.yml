@@ -23,12 +23,13 @@ jobs:
       run: |
         npm install --location=global @angular/cli@14.0.5
         yarn
-        ng build @pano/ngx-ace
+        ng build panosen-ngx-ace
 
     - name: NPM Publish
       uses: JS-DevTools/npm-publish@v1
       with:
         token: ${{ secrets.NPM_TOKEN }}
-        package: ./dist/pano/ngx-ace/package.json
+        package: ./dist/panosen-ngx-ace/package.json
         access: public
+        dry-run: true
 

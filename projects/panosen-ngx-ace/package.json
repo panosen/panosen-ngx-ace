@@ -1,5 +1,5 @@
 {
-  "name": "pano-ngx-ace",
+  "name": "@panosen/ngx-ace",
   "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^14.0.0",

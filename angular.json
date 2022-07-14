@@ -97,23 +97,23 @@
         }
       }
     },
-    "@pano/ngx-ace": {
+    "panosen-ngx-ace": {
       "projectType": "library",
-      "root": "projects/pano/ngx-ace",
-      "sourceRoot": "projects/pano/ngx-ace/src",
+      "root": "projects/panosen-ngx-ace",
+      "sourceRoot": "projects/panosen-ngx-ace/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/pano/ngx-ace/ng-package.json"
+            "project": "projects/panosen-ngx-ace/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/pano/ngx-ace/tsconfig.lib.prod.json"
+              "tsConfig": "projects/panosen-ngx-ace/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/pano/ngx-ace/tsconfig.lib.json"
+              "tsConfig": "projects/panosen-ngx-ace/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -121,9 +121,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/pano/ngx-ace/src/test.ts",
-            "tsConfig": "projects/pano/ngx-ace/tsconfig.spec.json",
-            "karmaConfig": "projects/pano/ngx-ace/karma.conf.js"
+            "main": "projects/panosen-ngx-ace/src/test.ts",
+            "tsConfig": "projects/panosen-ngx-ace/tsconfig.spec.json",
+            "karmaConfig": "projects/panosen-ngx-ace/karma.conf.js"
           }
         }
       }
