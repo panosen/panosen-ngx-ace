@@ -1,5 +1,5 @@
 {
-  "name": "pano-ace",
+  "name": "pano-ngx-ace",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
