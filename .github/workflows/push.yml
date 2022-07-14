@@ -30,4 +30,5 @@ jobs:
       with:
         token: ${{ secrets.NPM_TOKEN }}
         package: ./dist/pano/ngx-ace/package.json
+        access: public
 
