@@ -1,8 +1,44 @@
 <p>pano ace exmaple</p>
 
-<input [(ngModel)]="content" />
+<h3>value</h3>
+<div>
+    <input [(ngModel)]="content" />
+    <input [(ngModel)]="content" />
+</div>
 
-<input [(ngModel)]="content" />
+<h3>disabled</h3>
+<div>
+    <input type="checkbox" [(ngModel)]="disabled" />
+    <input type="checkbox" [(ngModel)]="disabled" />
+</div>
+
+<h3>mode</h3>
+<ul>
+    <li>
+        <input type="radio" value="json" [(ngModel)]="mode" />json
+    </li>
+    <li>
+        <input type="radio" value="javascript" [(ngModel)]="mode" />javascript
+    </li>
+</ul>
+
+<h3>theme</h3>
+<ul>
+    <li>
+        <input type="radio" value="github" [(ngModel)]="theme" />github
+    </li>
+    <li>
+        <input type="radio" value="eclipse" [(ngModel)]="theme" />eclipse
+    </li>
+</ul>
+
+<pre>{{mode}}</pre>
+
+<pre>{{content}}</pre>
+
+<div class="wrappar">
+    <pano-ace [(ngModel)]="content" [disabled]="disabled" [mode]="mode" [theme]="theme"></pano-ace>
+</div>
 
 
-<!--<pano-ace [(ngModel)]="content"></pano-ace>-->
+

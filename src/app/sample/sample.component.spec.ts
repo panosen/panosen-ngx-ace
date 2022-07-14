@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxAceComponent } from './ngx-ace.component';
+import { SampleComponent } from './sample.component';
 
-describe('NgxAceComponent', () => {
-  let component: NgxAceComponent;
-  let fixture: ComponentFixture<NgxAceComponent>;
+describe('SampleComponent', () => {
+  let component: SampleComponent;
+  let fixture: ComponentFixture<SampleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxAceComponent ]
+      declarations: [ SampleComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NgxAceComponent);
+    fixture = TestBed.createComponent(SampleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
