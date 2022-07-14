@@ -3,18 +3,14 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { PanosenAceModule } from '../../projects/panosen-ngx-ace/src/public-api';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SampleComponent } from './sample/sample.component';
 
 @NgModule({
     declarations: [
-        AppComponent,
-        SampleComponent
+        AppComponent
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
         PanosenAceModule.forRoot(),
         FormsModule
     ],

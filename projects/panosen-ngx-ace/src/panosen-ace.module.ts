@@ -1,10 +1,10 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { PanoAceComponent } from './components/pano-ace/pano-ace.component';
-import { DefaultPanoAceOptions, PanoAceOptionsToken } from './defaults';
-import { PanoAceService } from './services/pano-ace.service';
+import { PanosenAceComponent } from './components/panosen-ace/panosen-ace.component';
+import { DefaultPanosenAceOptions, PanosenAceOptionsToken } from './defaults';
+import { PanosenAceService } from './services/panosen-ace.service';
 
 const COMPONENTS = [
-    PanoAceComponent
+    PanosenAceComponent
 ]
 
 @NgModule({
@@ -22,8 +22,8 @@ export class PanosenAceModule {
         return {
             ngModule: PanosenAceModule,
             providers: [{
-                provide: PanoAceOptionsToken, useValue: DefaultPanoAceOptions
-            }, PanoAceService]
+                provide: PanosenAceOptionsToken, useValue: DefaultPanosenAceOptions
+            }, PanosenAceService]
         }
     }
 }

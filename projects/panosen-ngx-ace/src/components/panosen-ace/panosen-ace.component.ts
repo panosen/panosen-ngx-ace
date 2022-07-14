@@ -1,20 +1,20 @@
 import { Component, ElementRef, forwardRef, Input, NgZone, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { PanoAceService } from '../../services/pano-ace.service';
+import { PanosenAceService } from '../../services/panosen-ace.service';
 
 declare const ace: any;
 
 @Component({
-    selector: 'pano-ace',
-    templateUrl: './pano-ace.component.html',
-    styleUrls: ['./pano-ace.component.css'],
+    selector: 'panosen-ace',
+    templateUrl: './panosen-ace.component.html',
+    styleUrls: ['./panosen-ace.component.css'],
     providers: [{
         provide: NG_VALUE_ACCESSOR,
-        useExisting: forwardRef(() => PanoAceComponent),
+        useExisting: forwardRef(() => PanosenAceComponent),
         multi: true
     }]
 })
-export class PanoAceComponent implements OnInit, ControlValueAccessor, OnChanges {
+export class PanosenAceComponent implements OnInit, ControlValueAccessor, OnChanges {
 
     private editor: any = undefined;
 
@@ -33,17 +33,17 @@ export class PanoAceComponent implements OnInit, ControlValueAccessor, OnChanges
     fontSize?: number = 16;
 
     constructor(private element: ElementRef,
-        private panoAceService: PanoAceService,
+        private panosenAceService: PanosenAceService,
         private zone: NgZone) {
     }
 
     ngOnInit(): void {
         this.zone.runOutsideAngular(() => {
-            this.panoAceService.loaded().then(() => {
+            this.panosenAceService.loaded().then(() => {
                 this.zone.run(() => {
                     this.editor = ace.edit(this.element.nativeElement);
-                    if (this.panoAceService.settings) {
-                        this.editor.setOptions(this.panoAceService.settings);
+                    if (this.panosenAceService.settings) {
+                        this.editor.setOptions(this.panosenAceService.settings);
                     }
                     this.ngOnChanges({});
 

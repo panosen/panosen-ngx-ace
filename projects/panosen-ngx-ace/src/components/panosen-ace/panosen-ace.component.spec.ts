@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PanoAceComponent } from './pano-ace.component';
+import { PanosenAceComponent } from './panosen-ace.component';
 
-describe('PanoAceComponent', () => {
-  let component: PanoAceComponent;
-  let fixture: ComponentFixture<PanoAceComponent>;
+describe('PanosenAceComponent', () => {
+  let component: PanosenAceComponent;
+  let fixture: ComponentFixture<PanosenAceComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PanoAceComponent ]
+      declarations: [ PanosenAceComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PanoAceComponent);
+    fixture = TestBed.createComponent(PanosenAceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
