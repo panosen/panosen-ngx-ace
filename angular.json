@@ -101,7 +101,7 @@
       "projectType": "library",
       "root": "projects/panosen-ngx-ace",
       "sourceRoot": "projects/panosen-ngx-ace/src",
-      "prefix": "lib",
+      "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

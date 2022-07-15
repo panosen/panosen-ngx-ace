@@ -1,23 +1,23 @@
 import { Inject, Injectable } from '@angular/core';
-import { IPanoAceOptions, IPanoAceSettings, PanoAceOptionsToken } from '../defaults';
+import { IPanosenAceOptions, IPanosenAceSettings, PanosenAceOptionsToken } from '../defaults';
 
 declare const ace: any;
 
 @Injectable({
     providedIn: 'root'
 })
-export class PanoAceService {
+export class PanosenAceService {
 
     private promise: Promise<void> | undefined = undefined;
 
-    constructor(@Inject(PanoAceOptionsToken) private panoAceOptions: IPanoAceOptions) {
+    constructor(@Inject(PanosenAceOptionsToken) private panoAceOptions: IPanosenAceOptions) {
     }
 
     get url(): string {
         return this.panoAceOptions.url;
     }
 
-    get settings(): IPanoAceSettings | undefined {
+    get settings(): IPanosenAceSettings | undefined {
         return this.panoAceOptions.settings;
     }
 

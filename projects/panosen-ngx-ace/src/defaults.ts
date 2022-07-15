@@ -1,19 +1,19 @@
 import { InjectionToken } from "@angular/core";
 
-export interface IPanoAceSettings {
+export interface IPanosenAceSettings {
     mode?: string;
 }
 
-export interface IPanoAceOptions {
+export interface IPanosenAceOptions {
     url: string,
-    settings?: IPanoAceSettings
+    settings?: IPanosenAceSettings
 }
 
-export const DefaultPanoAceOptions: IPanoAceOptions = {
+export const DefaultPanosenAceOptions: IPanosenAceOptions = {
 
     //https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.min.js
     //https://cdn.staticfile.org/ace/1.7.1/ace.min.js
     url: 'https://cdn.staticfile.org/ace/1.7.1'
 };
 
-export const PanoAceOptionsToken = new InjectionToken<IPanoAceOptions>('@pano/ngx-ace options.');
+export const PanosenAceOptionsToken = new InjectionToken<IPanosenAceOptions>('@pano/ngx-ace options.');
